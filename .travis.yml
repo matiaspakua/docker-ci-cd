@@ -13,4 +13,4 @@ deploy:
   provider: script
   script: docker push matiasmiguez/node
   on:
-    branch: master
+    branch: main
