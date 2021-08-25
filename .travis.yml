@@ -3,14 +3,14 @@ services:
   - docker
 
 scripts:
-  - docker build -t mannydesigns/node .
-  - docker images mannydesigns/node
+  - docker build -t matiasmiguez/node .
+  - docker images matiasmiguez/node
 
 before_deploy:
   - docker login -u matiasmiguez -p 31552083Matias
 
 deploy:
   provider: script
-  script: docker push matiasmiguez/docker-travis-ci
+  script: docker push matiasmiguez/node
   on:
     branch: master
